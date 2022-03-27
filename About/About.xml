@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ModMetaData>
+  <name>More Bugs</name>
+  <author>Zylle</author>
+  <packageId>zylle.MoreBugs</packageId>
+  <supportedVersions>
+	<li>1.3</li>
+  </supportedVersions>
+  <description> 
+   Adds more bugs.
+   
+   Bugs are intended to be funny and do not break the game. The game is fully playable long term with this mod, just be aware that some actions may have unintended consequences!
+   
+   Bugs may be added or removed from time to time.
+   
+   Have fun!
+   
+   CREDITS: Includes bug ideas from Forekast, Varjonyymi, and UdderlyEvelyn
+   
+</description>
+
+</ModMetaData>
