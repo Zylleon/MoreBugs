@@ -79,17 +79,18 @@ namespace MoreBugs
     }
 
 
-    // shamelessly stolen from stackoverflow
-    //[HarmonyPatch(typeof(Pawn), "LabelShort", MethodType.Getter)]
-    //static class NameReversalPatch
-    //{
-    //    static void Postfix(ref string __result)
-    //    {
-    //        char[] charArray = __result.ToCharArray();
-    //        Array.Reverse(charArray);
-    //        __result = new string(charArray);
-    //    }
-    //}
+    [HarmonyPatch(typeof(MusicManagerPlay), "AppropriateNow")]
+    public static class Song_MapAppropriate_Patch
+    {
+        public static bool Prefix(ref bool __result, SongDef song)
+        {
+            if (song.tense)
+            {
+                __result = true;
+                return false;
+            }
+            return true;
+        }
 
-
+    }
 }
