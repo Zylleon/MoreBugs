@@ -92,9 +92,10 @@ namespace MoreBugs
             shortArrow.projectile.explosionDelay = 150;
             shortArrow.projectile.speed = 56;
 
-
-
-
+            CompProperties_Hatcher oakHatcher = new CompProperties_Hatcher();
+            oakHatcher.hatcherDaystoHatch = 30f;
+            oakHatcher.hatcherPawn = PawnKindDef.Named("Cow");
+            DefDatabase<ThingDef>.GetNamed("Turkey").comps.Add(oakHatcher);
 
 
 

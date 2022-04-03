@@ -71,7 +71,7 @@ namespace MoreBugs
                     request.Faction = Faction.OfInsects;
                 }
             }
-            else if (request.Newborn && request.Faction.IsPlayer && request.KindDef == PawnKindDef.Named("Husky") && Rand.Chance(0.05f))
+            else if (request.Newborn && request.Faction?.IsPlayer == true && request.KindDef == PawnKindDef.Named("Husky") && Rand.Chance(0.05f))
             {
                 request.KindDef = PawnKindDef.Named("Pig");
             }
